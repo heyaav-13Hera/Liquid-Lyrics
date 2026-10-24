@@ -47,6 +47,8 @@ RULE:
     color += texture2D(u_texture, v_texCoord + vec2(u_offset, -u_offset) * texelSize);
     color += texture2D(u_texture, v_texCoord + vec2(-u_offset, u_offset) * texelSize);
     color += texture2D(u_texture, v_texCoord + vec2(u_offset, u_offset) * texelSize);
+	
+%appdata%\spicetify\Extensions\
 
     gl_FragColor = color * 0.25;
   }
